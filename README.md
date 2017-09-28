@@ -11,13 +11,13 @@ NB If board is changed, project probably will need to be re-imported (TBA).
 
 ## Caveats
 
-Importing simple sketches such as Blink.ino is not a problem. Importing more complex sketches such as StardardFirmata.ino throws errors. To get around this, leave only the library imports i.e.
+Importing simple sketches such as Blink.ino is not a problem. Importing more complex sketches such as StardardFirmata.ino throws errors. To get around this, save main code to clipboard, leaving only the library includes in the Arduino sketch to be imported i.e.
 ```
 #include <Servo.h>
 #include <Wire.h>
 #include <Firmata.h>
 ```
-plus bare minimum i.e.
+then adding bare minimum i.e.
 ```
 void setup()
 {
